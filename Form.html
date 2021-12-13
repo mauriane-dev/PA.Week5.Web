@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form>
+        <label>Nome</label>
+        <input type="text" placeholder="Inserisci il tuo nome" />
+
+        <label>Cognome</label>
+        <input type="text" />
+
+        <br /><br />
+
+        <label>Data di nascita</label>
+        <input type="date" />
+
+        <label>Numero di qualcosa</label>
+        <input type="number" />
+
+        <br /><br />
+
+        <label>E-mail</label>
+        <input type="email" required />
+
+        <label>Password</label>
+        <input type="password" required
+               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{4,}$"
+               title="Minimum 4 characters, at least one uppercase
+               letter, one lowercase letter and one number" />
+
+        <br /><br />
+
+        <label>Sesso</label>
+        <select>
+            <option value="">Seleziona un'opzione</option>
+            <option value="1">F</option>
+            <option value="2">M</option>
+            <option value="3">Non voglio dichiararlo</option>
+        </select>
+
+        <br /><br />
+
+        <label>Sesso</label>
+        <label><input type="radio" name="sex" value="1" />F</label>
+        <label><input type="radio" name="sex" value="2" />M</label>
+        <label><input type="radio" name="sex" value="3" />Non dichiaro</label>
+
+        <br /><br />
+
+        <label>Skills</label>
+        <label><input type="checkbox" value="1" name="csharp" />C#</label>
+        <label><input type="checkbox" value="2" name="html" />HTML</label>
+        <label><input type="checkbox" value="3" name="sql" />SQL</label>
+
+        <br /><br />
+
+        <input type="submit" value="Invia" />
+    </form>
+
+</body>
+</html>
