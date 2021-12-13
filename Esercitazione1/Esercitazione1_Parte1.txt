@@ -1,0 +1,37 @@
+﻿Sito web di un Hotel
+
+Pagine da fare:
+- Homepage
+- Camere
+- Contatti
+- Prenota
+
+TUTTE le pagine devono avere in alto il logo e il nome dell'hotel.
+
+Sotto deve esserci una barra di navigazione con i link alle pagine (TRANNE Prenota).
+
+In fondo, si ha un footer con il nome dell'Hotel e i link dei social network 
+che portano alle pagine social dell'hotel (finte).
+
+- Homepage
+Deve contenere un'immagine dell'hotel
+
+Sotto, deve esserci un paragrafo con descrizione dell'hotel e un' altra immagine.
+
+- Camere
+Deve contenere un 'elenco' con le camere, con le seguenti informazioni:
+- nome della stanza, 
+- numero di posti letto
+- prezzo per notte
+- pulsante prenota che porta alla pagina prenota
+
+- Contatti
+inserire contatto email, indirizzo, numero di telefono
+(altre aggiunte: area di testo per richiedere informazioni (form -> textarea)...)
+
+- Prenota
+Deve contenere una form in cui l'utente può inserire: 
+nome, cognome, email, numero di telefono, data di check-in e di check-out.
+Utilizzare un pò di controlli delle form (data type...). 
+Tutti i campi sono obbligatori.
+Ricorda: inserire un campo per sottomettere la form
