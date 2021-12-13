@@ -16,7 +16,7 @@ che portano alle pagine social dell'hotel (finte).
 - Homepage
 Deve contenere un'immagine dell'hotel
 
-Sotto, deve esserci un paragrafo con descrizione dell'hotel e un' altra immagine.
+Sotto, deve esserci un paragrafo con descrizione dell'hotel e un'altra immagine.
 
 - Camere
 Deve contenere un 'elenco' con le camere, con le seguenti informazioni:
