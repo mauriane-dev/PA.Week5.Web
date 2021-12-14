@@ -86,7 +86,9 @@ li a, .bookingbutton {
 
 #pres {
     float: left;
-    margin-right: 10px;
+    margin-right: 20px;
+    box-shadow: 10px 10px 5px grey;
+    
 }
 
 p {
@@ -153,6 +155,39 @@ td > img {
     height: 150px;
 }
 
+table {
+    border: 1px #DDD solid;
+    border-collapse: collapse;
+    position: relative;
+    z-index: 20;
+}
+
+table:after {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    bottom: 100%;
+    right: 100%;
+    background-color: lightskyblue;
+    content: '';
+    z-index: -1;
+    -webkit-animation-name: border;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes border {
+    from {
+        top: -3px;
+        top: -3px;
+    }
+
+    to {
+        bottom: -4px;
+        right: -4px;
+    }
+}
 form input {
     font-family: Sitka Subheading;
     color: grey;
