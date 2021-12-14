@@ -23,15 +23,17 @@ h1 {
 
 .center{
     text-align: center;
+
 }
 
 .right {
     text-align: right;
 }
 
-div, .warning{
+div, .warning {
     border: 2px dotted white;
     /*border-color: aqua;*/
+    border-radius: 50px;
 }
 
 a {
@@ -76,6 +78,7 @@ a {
         width: 30%;
         float:left;
         border: 3px solid green;
+       
     }
 
     #div3{

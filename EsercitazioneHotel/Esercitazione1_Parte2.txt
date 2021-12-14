@@ -1,0 +1,13 @@
+﻿CSS:
+1) Affiancare il logo al titolo della pagina dell'hotel.
+
+2) Barra di navigazione
+- Renderla ORIZZONTALE (se non lo è già).
+- Stilizzare la barra di navigazione cambiando il colore dei link,
+generando un cambiamento di colore del testo del link o del background 
+o entrambi al passaggio del mouse sopra l'elemento.
+- Fare in modo che il colore del link non cambi quando è stato visitato.
+
+3) La prima immagine nella Homepage deve occupare tutta la larghezza della pagina.
+Affiancare il paragrafo di descrizione dell'hotel alla seconda immagine.
+
