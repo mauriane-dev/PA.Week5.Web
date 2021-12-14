@@ -1,0 +1,87 @@
+﻿body {
+    background-color: coral;
+}
+
+body > header {
+    background-color: white;
+}
+
+h1 {
+    color: #47c9e6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30pt;
+}
+
+#titoloPagina{
+    display: inline;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+.center{
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+div, .warning{
+    border: 2px dotted white;
+    /*border-color: aqua;*/
+}
+
+a {
+    font-size: x-large;
+    
+}
+
+    a:link {
+        color: #47c9e6;
+    }
+
+    a:hover{
+        color: white;
+        text-shadow: 2px 2px 1px blue
+    }
+
+    a:visited{
+        color: aquamarine;
+    }
+
+    p::first-letter{
+        font-size: xx-large;
+        color: deepskyblue;
+    }
+
+    #hidden{
+        visibility: hidden;/* Occupa spazio comunque*/
+    }
+
+    #none{
+        display: none;
+    }
+
+#div1 {
+    width: 200px;
+    height: 70px;
+    border: 3px dashed blue;
+    float: left;
+}
+
+    #div2{
+        width: 30%;
+        float:left;
+        border: 3px solid green;
+    }
+
+    #div3{
+        /*clear:left;*/
+        width:40%;
+        float:left;
+        border: 3px dotted white;
+    }
+    
