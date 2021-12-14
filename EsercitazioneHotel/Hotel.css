@@ -1,10 +1,17 @@
 ﻿body {
     background-color: #c5b3d3;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-#logo + h1{
-    display:inline;
+header {
+    position: relative;
+    bottom: 10px;
+}
+
+#logo + h1 {
+    display: inline;
 }
 
 h1, marquee {
@@ -24,7 +31,7 @@ ul {
     background-color: white;
 }
 
-li a {
+li a, a {
     float: left;
     display: block;
     text-align: center;
@@ -47,24 +54,46 @@ li a {
         color: rebeccapurple;
     }
 
+@media screen and (max-width:660px) {
+    main, header {
+        margin-left: 20%; 
+        padding: 1px 16px;
+    }
+
+    nav, ul{
+        width: 15%;
+        display: block;
+        position: fixed;
+        height: 100%;
+        text-align:center;
+        overflow: auto;
+    }
+
+    nav {
+        margin-top: -25px;
+    }
+
+    li a {
+        display: block;
+        padding: 8px 16px;
+    }
+}
 
 #hotel {
     width: 100%;
     height: 600px;
 }
 
-
 #pres {
     float: left;
     margin-right: 10px;
 }
 
-
 p {
     font-family: Sitka Subheading;
     font-size: 16px;
     padding: 10px;
-    text-align:justify;
+    text-align: justify;
     color: darkblue;
 }
 
@@ -75,12 +104,100 @@ footer {
     text-align: center;
     color: rgb(128,135,232);
     background-color: white;
+    flex: 0 0 50px; 
+    margin-top: auto;
     position: relative;
-    top: 50px;
-}
-
-.container{
-    max-width:100%;
+    top: 20px;
 }
 
 
+.container {
+    max-width: 100%;
+}
+
+table {
+    border-radius: 20px;
+    background-color: #c5b3d3;
+    font-family: Sitka Subheading;
+}
+
+    table thead {
+        background-color: thistle;
+        color: rgb(128,135,232);
+    }
+
+    table tr {
+        text-align: center;
+    }
+
+/*Selettore righe pari e dispari*/
+tbody tr:nth-child(even) {
+    background-color: #e7d3f6;
+    color: darkblue;
+}
+
+tbody tr:nth-child(odd) {
+   
+    background-color: rgb(200 202 233);
+    color: darkblue;
+}
+
+tbody tr:hover {
+    background-color: #bdd8ed;
+    color: mediumvioletred;
+}
+
+td > img {
+    width: 200px;
+    height: 150px;
+}
+
+form input {
+    font-family: Sitka Subheading;
+    color: grey;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+form label {
+    font-family: Sitka Subheading;
+    color: rgb(128,135,232);
+}
+
+#imgForm {
+    float: left;
+    height: 350px;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.prenotazione {
+    width: 40%;
+    text-align: center;
+    margin-left: 20px;
+    float: left;
+}
+
+.button {
+    width: 20%;
+    border-radius: 50%;
+    border: solid lavender;
+}
+
+.contatti * {
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    width: 400px;
+    height: 250px;
+}
+
+@media screen and (max-width: 600px) {
+    #imgForm {
+        display: none;
+    }
+}
