@@ -11,3 +11,14 @@ o entrambi al passaggio del mouse sopra l'elemento.
 3) La prima immagine nella Homepage deve occupare tutta la larghezza della pagina.
 Affiancare il paragrafo di descrizione dell'hotel alla seconda immagine.
 
+4) Fare in modo che, passando sulla descrizione di una camera, venga evidenziata 
+con un colore diverso.
+
+5) Inserire un pulsante arrotondato per inviare i dati (submit) nella form di prenotazione.
+
+6) Media queries:
+- rendere la barra di navigazione LATERALE e verticale quando lo schermo diventa minore di 660px
+- fare in modo che la form occupi metà della pagina e l'altra metà è occupata 
+da un'immagine. Quando lo schermo diventa piccolo (valutando un punto limite in cui è opportuno)
+far scomparire l'immagine accanto alla form di prenotazione oppure ridistribuire il layout 
+in modo che l'immagine si sposti in basso rispetto alla form.
