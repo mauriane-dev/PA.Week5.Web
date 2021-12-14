@@ -31,7 +31,7 @@ ul {
     background-color: white;
 }
 
-li a, a {
+li a, .bookingbutton {
     float: left;
     display: block;
     text-align: center;
@@ -98,7 +98,7 @@ p {
 }
 
 footer {
-    clear: both;
+    
     margin-left: -8px;
     margin-right: -8px;
     text-align: center;
@@ -109,11 +109,12 @@ footer {
     position: relative;
     top: 20px;
 }
+   
 
 
-.container {
-    max-width: 100%;
-}
+    .container {
+        max-width: 100%;
+    }
 
 table {
     border-radius: 20px;
@@ -169,14 +170,14 @@ form label {
 #imgForm {
     float: left;
     height: 350px;
-    width: 50%;
+    width: 45%;
     margin-left: 20px;
 }
 
 .prenotazione {
-    width: 40%;
+    width: 50%;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 35px;
     float: left;
 }
 
