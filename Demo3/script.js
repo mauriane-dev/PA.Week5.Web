@@ -61,8 +61,13 @@ function demo4() {
 
     //mi aspetto di trovare in elements 2 elementi
 
-    //TODO:verificare gli elementi checkati
-    //stampare qualcosa
+    var count = 0;
+    for (let i = 0; i < elements.length; i++) {
+        //se la casella è checkata, incremento il contatore
+        if (elements[i].checked)
+            count++;
+    }
 
-
+    //Hai selezionato TOT opzioni...
+    alert("Hai selezionato " + count + " opzione/i!");
 }
