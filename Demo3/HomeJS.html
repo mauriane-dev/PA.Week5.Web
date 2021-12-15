@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+        //Codice js con sintassi di js
+        //alert("Ciao a tutte!");
+    </script>
+
+    <script src="script.js"></script>
+</head>
+<body onload="demo2()">
+    <script>
+        //alert("Ri-ciao!");
+
+        miaFunzione();
+    </script>
+
+    <button onclick="demo1()">Cliccami!</button>
+
+    <div style="background-color: burlywood" onmouseover="this.style.backgroundColor = 'green'">
+        <p>Testo nel paragrafo</p>
+    </div>
+
+    <!--Onkeydown-->
+    <input type="text" onkeydown="demo1()"/> 
+
+    <select id="sex" onchange="demo3()">
+        <option value="">Seleziona un'opzione</option>
+        <option value="1">F</option>
+        <option value="2">M</option>
+        <option value="3">Non dichiarato</option>
+    </select>
+
+    <div id="checkboxes" onchange="demo4()"> 
+    <!--Se l'utente seleziona qualcosa, viene invocata la funzione-->
+        <label><input type="checkbox" />opzione 1</label>
+        <label><input type="checkbox" />opzione 2</label>
+    </div>
+</body>
+</html>
