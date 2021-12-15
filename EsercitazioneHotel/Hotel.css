@@ -54,30 +54,7 @@ li a, .bookingbutton {
         color: rebeccapurple;
     }
 
-@media screen and (max-width:660px) {
-    main, header {
-        margin-left: 20%; 
-        padding: 1px 16px;
-    }
 
-    nav, ul{
-        width: 15%;
-        display: block;
-        position: fixed;
-        height: 100%;
-        text-align:center;
-        overflow: auto;
-    }
-
-    nav {
-        margin-top: -25px;
-    }
-
-    li a {
-        display: block;
-        padding: 8px 16px;
-    }
-}
 
 #hotel {
     width: 100%;
@@ -88,7 +65,6 @@ li a, .bookingbutton {
     float: left;
     margin-right: 20px;
     box-shadow: 10px 10px 5px grey;
-    
 }
 
 p {
@@ -100,28 +76,26 @@ p {
 }
 
 footer {
-    
     margin-left: -8px;
     margin-right: -8px;
     text-align: center;
     color: rgb(128,135,232);
     background-color: white;
-    flex: 0 0 50px; 
+    flex: 0 0 50px;
     margin-top: auto;
     position: relative;
     top: 20px;
 }
-   
 
-
-    .container {
-        max-width: 100%;
-    }
+.container {
+    max-width: 100%;
+}
 
 table {
     border-radius: 20px;
     background-color: #c5b3d3;
     font-family: Sitka Subheading;
+    width: 100%;
 }
 
     table thead {
@@ -133,6 +107,8 @@ table {
         text-align: center;
     }
 
+
+
 /*Selettore righe pari e dispari*/
 tbody tr:nth-child(even) {
     background-color: #e7d3f6;
@@ -140,7 +116,6 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:nth-child(odd) {
-   
     background-color: rgb(200 202 233);
     color: darkblue;
 }
@@ -162,21 +137,22 @@ table {
     z-index: 20;
 }
 
-table:after {
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    bottom: 100%;
-    right: 100%;
-    background-color: lightskyblue;
-    content: '';
-    z-index: -1;
-    -webkit-animation-name: border;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-fill-mode: forwards;
-}
+    table:after {
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        bottom: 100%;
+        right: 100%;
+        background-color: lightskyblue;
+        content: '';
+        z-index: -1;
+        -webkit-animation-name: border;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-fill-mode: forwards;
+    }
+
 @-webkit-keyframes border {
     from {
         top: -3px;
@@ -188,6 +164,7 @@ table:after {
         right: -4px;
     }
 }
+
 form input {
     font-family: Sitka Subheading;
     color: grey;
@@ -235,5 +212,38 @@ textarea {
 @media screen and (max-width: 600px) {
     #imgForm {
         display: none;
+    }
+}
+@media screen and (max-width:660px) {
+    header, main {
+        margin-left: 20%;
+        padding: 1px 16px;
+    }
+    footer {
+        margin-left: 15%;
+    }
+
+    nav, ul {
+        width: 15%;
+        display: block;
+        position: fixed;
+        height: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    nav {
+        margin-top: -25px;
+    }
+
+    li a {
+        display: block;
+        padding: 8px 16px;
+    }
+
+    table {
+        position: relative;
+        z-index: -1;
+        width: 100%;
     }
 }
