@@ -11,7 +11,8 @@
 
     <script src="script.js"></script>
 </head>
-<body onload="demo2()">
+<!--<body onload="demo2()">-->
+<body onload="welcome()">
     <script>
         //alert("Ri-ciao!");
 
@@ -25,7 +26,7 @@
     </div>
 
     <!--Onkeydown-->
-    <input type="text" onkeydown="demo1()"/> 
+    <input type="text" onkeydown="demo1()" />
 
     <select id="sex" onchange="demo3()">
         <option value="">Seleziona un'opzione</option>
@@ -34,10 +35,12 @@
         <option value="3">Non dichiarato</option>
     </select>
 
-    <div id="checkboxes" onchange="demo4()"> 
-    <!--Se l'utente seleziona qualcosa, viene invocata la funzione-->
+    <div id="checkboxes" onchange="demo4()">
+        <!--Se l'utente seleziona qualcosa, viene invocata la funzione-->
         <label><input type="checkbox" />opzione 1</label>
         <label><input type="checkbox" />opzione 2</label>
     </div>
+
+    <button onclick="clearLS()">Esci</button>
 </body>
 </html>

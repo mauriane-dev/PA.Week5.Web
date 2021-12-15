@@ -71,3 +71,38 @@ function demo4() {
     //Hai selezionato TOT opzioni...
     alert("Hai selezionato " + count + " opzione/i!");
 }
+
+function welcome() {
+    //se l'utente è già 'loggato' (ovvero ci sono già dei dati nello storage),
+    //stampo 'Bevenuto Nome'
+    //altrimenti chiedo di inserire il nome, lo salvo nello storage e stampo
+    //'Benvenuto Nome'
+
+    //prova a recuperare dallo storage un username -> getItem che prende la chiave 
+    let storedUsername = localStorage.getItem('username');
+
+    if (storedUsername == null) {
+        let newUsername = prompt("Inserisci il tuo username");
+
+        //salvo nel local storage
+        localStorage.setItem('username', newUsername);
+
+        //dai il benvenuto
+        alert("Benvenut* " + newUsername + " !");
+    }
+    else {
+        alert("Benvenut* " + storedUsername + " !");
+    }
+
+    //localStorage.length
+
+}
+
+function clearLS() {
+    //localStorage.clear(); //Svuota il local storage (o session storage se chiamata sul session storage)
+    let storedUsername = localStorage.getItem('username');
+
+    if (storedUsername != null)
+        localStorage.removeItem('username');
+}
+

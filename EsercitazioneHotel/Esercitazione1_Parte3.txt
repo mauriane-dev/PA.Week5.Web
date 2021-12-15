@@ -1,0 +1,8 @@
+﻿Javascript
+- Al caricamento della pagina Home, viene mostrato il messaggio di benvenuto.
+Se l'utente è 'loggato' -> Benvenuto NOME!
+Altrimenti -> Benvenuto!
+
+- Inserire in basso un pulsante 'Accedi' che, se cliccato, fa comparire una popup di login 
+(username e password e tasto login) e un tasto chiudi (se cliccato, si nasconde
+la popup e si rivede il tasto 'Accedi')
