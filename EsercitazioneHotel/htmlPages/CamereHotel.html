@@ -5,9 +5,11 @@
     <title>Le nostre camere</title>
     <link href="../Hotel.css" rel="stylesheet" />
     <script src="../hotel.js"></script>
+    <link href="../../lib/font-awesome/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-<body>
+<body onload="checkLoggedUser()">
     <header>
         <img id="logo" src="../images/logo.png" width="70" height="70" />
         <h1>Disneyland Hotel</h1>
@@ -62,6 +64,7 @@
                 </tr>
             </tbody>
         </table>
+
         <button id="openLoginForm" onclick="openForm()">Effettua il login</button>
 
         <div id="myForm">
@@ -83,8 +86,8 @@
 
     <footer>
         <p>
-            &copy; 2021 Disneyland Hotel | <a target="_blank" href="https://www.instagram.com/disneylandparis/">Instagram</a>
-            <a target="_blank" href="https://www.facebook.com/DisneylandParisit/">Facebook</a>
+            &copy; 2021 Disneyland Hotel | <a target="_blank" href="https://www.instagram.com/disneylandparis/"><i class="fa fa-instagram fa-lg"></i></a>
+            <a target="_blank" href="https://www.facebook.com/DisneylandParisit/"><i class="fa fa-facebook fa-lg"></i></a>
         </p>
     </footer>
 </body>

@@ -247,22 +247,21 @@ textarea {
         width: 100%;
     }
 }
-.fas {
+.fa, .fab {
     padding: 10px;
     font-size: 10px;
     width: 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+    background: rgb(128,135,232);
+    color: white;
 }
-
-    .fa:hover {
-        opacity: 0.7;
-    }
 
 .fa-calendar{
     color: white;
 }
+
 
 /*Javascript*/
 #myForm {
@@ -290,4 +289,15 @@ textarea {
     width: 280px;
     font-family: Sitka Subheading;
     z-index:1;
+}
+
+li #logOutButton {
+    background-color: #555;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    opacity: 0.8;
+    font-family: Sitka Subheading;
+    display: none;
 }
