@@ -17,7 +17,6 @@ la casella che contiene form e tasto chiudi scompare e il tasto 'Accedi' è disa
 - Ricaricando la pagina o andando in una delle altre pagine, se l'utente è loggato, non 
 deve essere possibile, quindi, fare login (ovvero tasto Accedi disabilitato)
 
-
 - Nella barra di navigazione, quando l'utente è loggato, compare un tasto 
 'Esci' per fare logout, che fa tornare possibile il login (quindi tasto accedi disabilitato)
 e svuota lo storage.

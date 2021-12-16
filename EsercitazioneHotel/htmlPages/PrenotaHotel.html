@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body onload="checkLoggedUser();">
+<body onload="checkLoggedUser(); showBill();">
     <header>
         <img src="../images/logo.png" id="logo" width="70" height="70" />
         <h1>Disneyland Hotel</h1>
@@ -20,10 +20,12 @@
             <li><a href="HomePageHotel.html">Home</a></li>
             <li><a href="CamereHotel.html">Le nostre camere</a></li>
             <li><a href="ContattiHotel.html">Contatti</a></li>
+            <li><button id="logOutButton" onclick="logOut()">Esci</button></li>
         </ul>
     </nav>
 
     <main>
+        <p id="bill"></p>
         <form class="prenotazione">
             <label>Nome</label>
             <input class="inputUtente" required placeholder="Nome" type="text" />

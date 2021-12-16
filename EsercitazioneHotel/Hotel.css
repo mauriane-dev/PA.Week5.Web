@@ -247,7 +247,7 @@ textarea {
         width: 100%;
     }
 }
-.fa, .fab {
+.fa-instagram, .fa-facebook {
     padding: 10px;
     font-size: 10px;
     width: 20px;
@@ -258,7 +258,7 @@ textarea {
     color: white;
 }
 
-.fa-calendar{
+.fa-calendar {
     color: white;
 }
 
