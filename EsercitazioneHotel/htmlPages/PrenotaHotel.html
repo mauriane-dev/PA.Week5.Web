@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Prenota</title>
     <link href="../Hotel.css" rel="stylesheet" />
-
+    <script src="../hotel.js"></script>
 </head>
 <body>
     <header>
@@ -45,6 +45,24 @@
         </form>
 
         <img id="imgForm" src="../images/mickeymouse.png" />
+
+
+        <button id="openLoginForm" onclick="openForm()">Effettua il login</button>
+
+        <div id="myForm">
+            <form onsubmit="save();">
+                <h1>Login</h1>
+
+                <label for="username"><b>Username</b></label>
+                <input id="usernameInput" type="text" placeholder="Inserisci Username" name="username" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input id="passwordInput" type="password" placeholder="Inserisci Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Chiudi</button>
+            </form>
+        </div>
     </main>
 
     <footer>

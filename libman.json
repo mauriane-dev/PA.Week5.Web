@@ -5,6 +5,10 @@
     {
       "library": "fontawesome-iconpicker@3.2.0",
       "destination": "lib/fontawesome-iconpicker/"
+    },
+    {
+      "library": "font-awesome@5.15.4",
+      "destination": "lib/font-awesome/"
     }
   ]
 }

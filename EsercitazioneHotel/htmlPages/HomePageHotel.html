@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>HomePage</title>
     <link href="../Hotel.css" rel="stylesheet" />
-
+    <script src="../hotel.js"></script>
 </head>
 <body>
     <header>
@@ -23,12 +23,12 @@
     </nav>
 
     <main class="container">
-        
+
         <img id="hotel" src="../images/hotel.jpg" />
 
         <div class="presentazione">
-                <img id="pres" src="../images/stanza.jfif" />
-        
+            <img id="pres" src="../images/stanza.jfif" />
+
             <p>
                 Stanco dopo una giornata alla scoperta della città? Per i viaggiatori che visitano Chessy, il Disneyland Hotel è un’ottima scelta per riposarsi e recuperare le energie. Famoso per il suo ambiente di lusso e la vicinanza a fantastici ristoranti e attrazioni, il Disneyland Hotel è una location ideale per scoprire facilmente il meglio di Chessy.
 
@@ -40,6 +40,23 @@
 
                 Se viaggi per lavoro o per piacere, il Disneyland Hotel renderà la tua visita a Chessy indimenticabile.
             </p>
+        </div>
+
+        <button id="openLoginForm" onclick="openForm()">Effettua il login</button>
+
+        <div id="myForm">
+            <form onsubmit="save();">
+                <h1>Login</h1>
+
+                <label for="username"><b>Username</b></label>
+                <input id="usernameInput" type="text" placeholder="Inserisci Username" name="username" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input id="passwordInput" type="password" placeholder="Inserisci Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Chiudi</button>
+            </form>
         </div>
     </main>
     <footer>
