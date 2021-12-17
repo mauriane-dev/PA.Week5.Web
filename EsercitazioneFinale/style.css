@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(197 212 224);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  text-align: center;
+  color: rgb(168, 168, 168);
+}
+
+header {
+  font-family: "Segoe UI";
+  font-weight: bolder;
+  text-align: center;
+  font-size: xx-large;
+  color: lightcoral;
+}
+
+article header {
+  padding: 5px;
+}
+
+section {
+  padding-bottom: 15px;
+  text-align: justify;
+}
+
+button {
+  border-radius: 50px;
+  box-shadow: black;
+}
+
+/*STILE DELLA NAV BAR*/
+li .a-menu {
+    float: left;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    font-family: 'Segoe UI';
+    color: lightcoral;
+    font-size: large;
+}
+
+ul {
+    padding: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    list-style-type: none;
+    background: white;
+    overflow: hidden; /*Per barra orizzontale*/
+}
+
+.a-menu:hover {
+  background-color: #eddcdc;
+}
+
+.video {
+  text-align: center;
+  margin: 30px;
+}
+
+.info {
+    color: lightslategrey;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+}
+
+.left {
+  float: left;
+  margin: 0;
+  text-align: center;
+  padding: 15px;
+  width: 18%;
+}
+
+.trama {
+    float: left;
+    width: 60%;
+    color:lightslategrey;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+}
+
+h3 {
+    color: cornflowerblue;
+    font-size: x-large;
+    text-align: center;
+}
+.button {
+   text-align:center;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+footer {
+    color: rosybrown;
+}

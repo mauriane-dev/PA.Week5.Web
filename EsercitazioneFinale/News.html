@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+
+    <title>News</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body onload="check()">
+    <header>
+        <h1>News</h1>
+    </header>
+    <nav>
+        <ul class="ul-menu">
+            <li class="li-menu">
+                <a class="a-menu" href="SchedaTecnica.html">Home</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="SchedaTecnica.html">Scheda del film</a>
+            </li>
+            <li class="li-menu">
+                <a class="a-menu" href="News.html">News</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form id="subscribeForm" onsubmit="save(); hideForm();">
+        <header> <h3> Iscriviti alla nostra newsletter!</h3></header>
+
+        <div>
+            <input type="email" placeholder="E-mail" onchange="ableButton()" />
+        </div>
+        <div>
+            <input id="subscribeButton" class="button" type="submit" value="Subscribe" disabled="disabled" />
+
+        </div>
+    </form>
+    <input id="unsubscribeButton" class="button" type="submit" value="Unsubscribe" onclick="unsubscribe()" style="display:none" />
+    <a href="Home.html"><input class="button" type="button" value="Back" /></a>
+
+    <footer>
+        <p>&hearts; Alessandra Degan Di Dieco</p>
+    </footer>
+
+</body>
